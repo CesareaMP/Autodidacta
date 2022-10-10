@@ -1,4 +1,5 @@
 #include <iostream>//libreria de intup output stream
+#include <math.h>;//libreria de matemática
 
 using namespace std;//permite que no sea necesario escribir std antes de instrucciones de input, output
 
@@ -70,3 +71,51 @@ using namespace std;//permite que no sea necesario escribir std antes de instruc
 
 	return 0;
 }*/
+
+//PUNTEROS
+/*
+int main() {
+	int num, * ubic_num;
+	num = 20;
+	ubic_num = &num;
+	cout<<"direccion de la variable: "<<ubic_num;
+	cout << "\nvalor de la dirección de memoria: " << *ubic_num<<"\n";
+
+	system("pause");
+}
+*/
+
+//SABER SI UN NÚMERO ES PAR CON PUNTEROS
+/*
+int main() {
+	int num, * pos_numero;
+	cout << "Ingrese un número para ser evaluado: ";
+	cin >> num;
+	pos_numero = &num;
+	if (*pos_numero%2==0)
+	{
+		cout << "El numero "<<*pos_numero<< " es par";
+	}
+	else
+	{
+		cout << "El numero "<<*pos_numero<<" es impar";
+	}
+	system("pause");
+}
+*/
+
+//CORRESPONDENCIA ENTRE ARRAY 
+
+int main() {
+
+	int numeros[] = { 1,2,3,4,5 };
+	int* dir_numeros;
+	dir_numeros = numeros;
+
+	for (int i = 0; i < 5; i++)
+	{
+		cout << "Posicion de memoria de [" << numeros[i] << "] es: " << dir_numeros++ << endl;
+	}
+
+	system("pause");
+}
