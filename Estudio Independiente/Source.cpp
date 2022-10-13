@@ -1,5 +1,7 @@
 #include <iostream>//libreria de intup output stream
 #include <math.h>;//libreria de matemática
+#include "Pila.h";
+#include "Lista.h";
 
 using namespace std;//permite que no sea necesario escribir std antes de instrucciones de input, output
 
@@ -105,7 +107,7 @@ int main() {
 */
 
 //CORRESPONDENCIA ENTRE ARRAY 
-
+/*
 int main() {
 
 	int numeros[] = { 1,2,3,4,5 };
@@ -119,3 +121,60 @@ int main() {
 
 	system("pause");
 }
+*/
+
+//TRANSMISIÓN DE VALORES CON PUNTEROS
+/*
+void intercambio(float*, float*);
+int main() {
+
+	float numero1 = 20.8, numero2 = 6.78;
+
+	cout << "Valores del numero 1: " << numero1 << endl;
+	cout << "Valor del numero 2: " << numero2;
+	intercambio(&numero1, &numero2);
+
+	cout << "\n\nNuevo valor del numero 1: " << numero1 << endl;
+	cout << "Nuevo valor del numero 2: " << numero2 << endl;
+
+	system("pause");
+}
+void intercambio(float *dir_numero1, float *dir_numero2) {
+	float aux;
+	aux = *dir_numero1;
+	*dir_numero1 = *dir_numero2;
+	*dir_numero2 = aux;
+}
+*/
+
+//PILAS(ADD, POP) Y LISTAS(ADD, GET_ALL_ITEMS) 
+//int main() {
+//	cout << "PILA" << endl;
+//	PILA nueva_pila;
+//	nueva_pila.Add(12);
+//	nueva_pila.Add(13);
+//	nueva_pila.Add(14);
+//	nueva_pila.Add(15);
+//	nueva_pila.Add(16);
+//	nueva_pila.Add(17);
+//	for (int i = 0; i < 6; i++)
+//	{
+//		cout << nueva_pila.Pop()<<endl;
+//	}
+//	cout << "\n\n" << endl;
+//	Lista nueva_lista;
+//	nueva_lista.Add(12);
+//	nueva_lista.Add(13);
+//	nueva_lista.Add(14);
+//	nueva_lista.Add(15);
+//	nueva_lista.Add(16);
+//	nueva_lista.Add(17);
+//	nueva_lista.Add(18);
+//	for (int i = 0; i < 7; i++)
+//	{
+//		cout << nueva_lista.get_all_items(i) << endl;
+//	}
+//
+//	system("\npause");
+//}
+
